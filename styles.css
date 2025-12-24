@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/010/170/065/small/3d-illustration-of-round-clock-stopwatch-on-a-black-background-stopwatch-icon-logo-chronometer-vintage-timer-photo.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 0 0 6px #000;
+}
+
+.display {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #00eaff;
+  text-shadow: 0 0 8px #000;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.15s ease, opacity 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#start {
+  background: #28a745;
+}
+
+#pause {
+  background: #ffc107;
+  color: #000;
+}
+
+#reset {
+  background: #dc3545;
+}
+
+#lap {
+  background: #007bff;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.laps {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.laps li {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  font-size: 14px;
+  color: #f2f2f2;
+  text-shadow: 0 0 4px #000;
+}
